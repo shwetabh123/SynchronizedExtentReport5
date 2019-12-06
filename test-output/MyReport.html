@@ -43,6 +43,7 @@
 			</div>
 			<ul id='slide-out' class='side-nav fixed hide-on-med-and-down'>
 				<li class='analysis waves-effect active'><a href='#!' class='test-view' onclick="_updateCurrentStage(0)"><i class='mdi-action-dashboard'></i>Test Details</a></li>
+					<li class='analysis waves-effect'><a href='#!' class='categories-view' onclick="_updateCurrentStage(1)"><i class='mdi-maps-local-offer'></i>Categories</a></li>
 				<li class='analysis waves-effect'>
 					<a href='#!' onclick="_updateCurrentStage(-1)" class='dashboard-view'><i class='mdi-action-track-changes'></i></i>Analysis</a>
 				</li>
@@ -53,7 +54,7 @@
 					<i class='mdi-hardware-desktop-windows'></i>
 				</li>
 				<li>
-					<span class='suite-started-time'>2019-01-20 21:23:17</span>
+					<span class='suite-started-time'>2019-12-06 07:36:47</span>
 				</li>
 				<li>
 					<span>v2.41.1</span>
@@ -83,25 +84,25 @@
 					<div class='col l2 m4 s12'>
 						<div class='card suite-total-time-current'> 
 							<span class='panel-name'>Total Time Taken (Current Run)</span> 
-							<span class='suite-total-time-current-value panel-lead'>0h 0m 2s+336ms</span> 
+							<span class='suite-total-time-current-value panel-lead'>0h 3m 19s+601ms</span> 
 						</div> 
 					</div>
 					<div class='col l2 m4 s12'>
 						<div class='card suite-total-time-overall'> 
 							<span class='panel-name'>Total Time Taken (Overall)</span> 
-							<span class='suite-total-time-overall-value panel-lead'>0h 0m 2s+336ms</span> 
+							<span class='suite-total-time-overall-value panel-lead'>0h 3m 19s+601ms</span> 
 						</div> 
 					</div>
 					<div class='col l2 m4 s6 suite-start-time'>
 						<div class='card accent green-accent'> 
 							<span class='panel-name'>Start</span> 
-							<span class='panel-lead suite-started-time'>2019-01-20 21:23:14</span> 
+							<span class='panel-lead suite-started-time'>2019-12-06 07:33:27</span> 
 						</div> 
 					</div>
 					<div class='col l2 m4 s6 suite-end-time'>
 						<div class='card accent pink-accent'> 
 							<span class='panel-name'>End</span> 
-							<span class='panel-lead suite-ended-time'>2019-01-20 21:23:17</span> 
+							<span class='panel-lead suite-ended-time'>2019-12-06 07:36:47</span> 
 						</div> 
 					</div>
 				</div>
@@ -168,7 +169,7 @@
 								<tbody>
 										<tr>
 											<td>User Name</td>
-											<td>Admin</td>
+											<td>shwetabh</td>
 										</tr>
 										<tr>
 											<td>OS</td>
@@ -176,7 +177,7 @@
 										</tr>
 										<tr>
 											<td>Java Version</td>
-											<td>1.8.0_191</td>
+											<td>1.8.0_231</td>
 										</tr>
 										<tr>
 											<td>Host Name</td>
@@ -191,6 +192,32 @@
 						</div>
 					</div>
 				</div>
+					<div class='category-summary-view'>
+						<div class='col l4 m6 s12'>
+							<div class='card-panel'>
+								<span class='label info outline right'>Categories</span>
+								<table>
+									<thead>
+										<tr>
+											<th>Name</th>
+										</tr>
+									</thead>
+									<tbody>
+											<tr>
+												<td>
+													Regression Testing
+												</td>
+											</tr>
+											<tr>
+												<td>
+													Smoke Testing
+												</td>
+											</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
 			</div>
 			<!-- /dashboard -->
 			
@@ -214,6 +241,17 @@
 									<li class='clear'><a href='#!'>Clear Filters</a></li>
 								</ul>
 							</div>
+								<div>
+									<a class='dropdown-button btn-floating btn-small waves-effect waves-light grey category-toggle' data-activates='category-toggle' data-constrainwidth='false' data-beloworigin='true' data-hover='true' href='#'>
+										<i class='mdi-maps-local-offer'></i>
+									</a>
+									<ul id='category-toggle' class='dropdown-content'>
+											<li class='Regression Testing'><a href='#!'>Regression Testing</a></li>
+											<li class='Smoke Testing'><a href='#!'>Smoke Testing</a></li>
+										<li class='divider'></li>
+										<li class='clear'><a href='#!'>Clear Filters</a></li>
+									</ul>
+								</div>
 							<div>
 								<a class='btn-floating btn-small waves-effect waves-light grey' id='clear-filters' alt='Clear Filters' title='Clear Filters'>
 									<i class='mdi-navigation-close'></i>
@@ -241,20 +279,392 @@
 						<div class='card-panel no-padding-h no-padding-v no-margin-v'>
 							<div class='wrapper'>
 								<ul id='test-collection' class='test-collection'>
-										<li class='collection-item test displayed active pass ' extentid='685b836b-3290-4f26-aedb-b31c692afea0'>
+										<li class='collection-item test displayed active fail ' extentid='c7200984-7b1a-4f00-864a-906206012dcc'>
+											<div class='test-head'>
+												<span class='test-name'>TC2 </span>
+												<span class='test-status label right outline capitalize fail'>fail</span>
+												<span class='category-assigned hide  regressiontesting'></span>
+											</div>
+											<div class='test-body'>
+												<div class='test-info'>
+													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2019-12-06 07:35:42</span>
+													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2019-12-06 07:36:47</span>
+													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 1m 4s+897ms</span>
+												</div>
+												<div class='test-desc'> Verify that  INVALID username and VALID password</div>
+												<div class='test-attributes'>
+														<div class='categories'>
+																<span class='category text-white'>Regression Testing</span>
+														</div>
+												</div>
+												<div class='test-steps'>
+													<table class='bordered table-results'>
+														<thead>
+															<tr>
+																<th>Status</th>
+																<th>Timestamp</th>
+																<th>Details</th>
+															</tr>
+														</thead>
+														<tbody>
+																<tr>
+																	<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+																	<td class='timestamp'>07:35:42</td>
+																	<td class='step-details'>TEST CASE STARTED IS -> TC2</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>07:35:55</td>
+																	<td class='step-details'>Log from threadId: 13</td>
+																</tr>
+																<tr>
+																	<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+																	<td class='timestamp'>07:35:55</td>
+																	<td class='step-details'>Log from threadId: 13</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>07:36:08</td>
+																	<td class='step-details'>username is Typed</td>
+																</tr>
+																<tr>
+																	<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+																	<td class='timestamp'>07:36:08</td>
+																	<td class='step-details'>Snapshot below:</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>07:36:09</td>
+																	<td class='step-details'><a href='D:\workspace1\SynchronizedExtentReport5/screenshots/TC220191206073608.png' data-featherlight='image'><img class='report-img' src='file:///D:\workspace1\SynchronizedExtentReport5/screenshots/TC220191206073608.png' /></a></td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>07:36:14</td>
+																	<td class='step-details'>Password is Typed</td>
+																</tr>
+																<tr>
+																	<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+																	<td class='timestamp'>07:36:14</td>
+																	<td class='step-details'>Snapshot below:</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>07:36:14</td>
+																	<td class='step-details'><a href='D:\workspace1\SynchronizedExtentReport5/screenshots/TC220191206073614.png' data-featherlight='image'><img class='report-img' src='file:///D:\workspace1\SynchronizedExtentReport5/screenshots/TC220191206073614.png' /></a></td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>07:36:46</td>
+																	<td class='step-details'>Login is clicked</td>
+																</tr>
+																<tr>
+																	<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+																	<td class='timestamp'>07:36:46</td>
+																	<td class='step-details'>Snapshot below:</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>07:36:46</td>
+																	<td class='step-details'><a href='D:\workspace1\SynchronizedExtentReport5/screenshots/TC220191206073646.png' data-featherlight='image'><img class='report-img' src='file:///D:\workspace1\SynchronizedExtentReport5/screenshots/TC220191206073646.png' /></a></td>
+																</tr>
+																<tr>
+																	<td class='status fail' title='fail' alt='fail'><i class='mdi-navigation-cancel'></i></td>
+																	<td class='timestamp'>07:36:46</td>
+																	<td class='step-details'>Test Failedorg.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//SELECT[@name='j_company']"}
+  (Session info: chrome=78.0.3904.108)
+  (Driver info: chromedriver=78.0.3904.105 (60e2d8774a8151efa6a00b1f358371b1e0e07ee2-refs/branch-heads/3904@{#877}),platform=Windows NT 10.0.18362 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.0', revision: '35ae25b', time: '2016-03-15 17:00:58'
+System info: host: 'LAPTOP-76PGCCB3', ip: '192.168.225.33', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_231'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:61564}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=78.0.3904.105 (60e2d8774a8151efa6a00b1f358371b1e0e07ee2-refs/branch-heads/3904@{#877}), userDataDir=C:\Users\shwetabh\AppData\Local\Temp\scoped_dir7836_1523895800}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=78.0.3904.108, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 07be69e419ee97e9e092b05d63b80248
+*** Element info: {Using=xpath, value=//SELECT[@name='j_company']}
+Command duration or timeout: 207 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:32:46'
+System info: host: 'LAPTOP-76PGCCB3', ip: '192.168.225.33', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_231'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:61564}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=78.0.3904.105 (60e2d8774a8151efa6a00b1f358371b1e0e07ee2-refs/branch-heads/3904@{#877}), userDataDir=C:\Users\shwetabh\AppData\Local\Temp\scoped_dir7836_1523895800}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=78.0.3904.108, browserConnectionEnabled=false, proxy={}, nativeEvents=true, webdriver.remote.sessionid=8990f09b-486d-4020-837c-4592c04938ff, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 8990f09b-486d-4020-837c-4592c04938ff
+*** Element info: {Using=xpath, value=//SELECT[@name='j_company']}</td>
+																</tr>
+																<tr>
+																	<td class='status fail' title='fail' alt='fail'><i class='mdi-navigation-cancel'></i></td>
+																	<td class='timestamp'>07:36:47</td>
+																	<td class='step-details'><a href='D:\workspace1\SynchronizedExtentReport5/screenshots/TC220191206073646.png' data-featherlight='image'><img class='report-img' src='file:///D:\workspace1\SynchronizedExtentReport5/screenshots/TC220191206073646.png' /></a></td>
+																</tr>
+														</tbody>
+													</table>
+													<ul class='collapsible node-list' data-collapsible='accordion'>
+													</ul>
+												</div>
+											</div>
+										</li>
+										<li class='collection-item test displayed active fail ' extentid='fed55629-193c-4c83-9c65-ba02d01889b7'>
+											<div class='test-head'>
+												<span class='test-name'>TC6 </span>
+												<span class='test-status label right outline capitalize fail'>fail</span>
+												<span class='category-assigned hide  regressiontesting'></span>
+											</div>
+											<div class='test-body'>
+												<div class='test-info'>
+													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2019-12-06 07:34:44</span>
+													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2019-12-06 07:36:45</span>
+													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 2m 1s+52ms</span>
+												</div>
+												<div class='test-desc'> INVALID username and INVALID password.</div>
+												<div class='test-attributes'>
+														<div class='categories'>
+																<span class='category text-white'>Regression Testing</span>
+														</div>
+												</div>
+												<div class='test-steps'>
+													<table class='bordered table-results'>
+														<thead>
+															<tr>
+																<th>Status</th>
+																<th>Timestamp</th>
+																<th>Details</th>
+															</tr>
+														</thead>
+														<tbody>
+																<tr>
+																	<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+																	<td class='timestamp'>07:34:44</td>
+																	<td class='step-details'>TEST CASE STARTED IS -> TC6</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>07:35:51</td>
+																	<td class='step-details'>Log from threadId: 15</td>
+																</tr>
+																<tr>
+																	<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+																	<td class='timestamp'>07:35:51</td>
+																	<td class='step-details'>Log from threadId: 15</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>07:36:06</td>
+																	<td class='step-details'>username is Typed</td>
+																</tr>
+																<tr>
+																	<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+																	<td class='timestamp'>07:36:06</td>
+																	<td class='step-details'>Snapshot below:</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>07:36:06</td>
+																	<td class='step-details'><a href='D:\workspace1\SynchronizedExtentReport5/screenshots/TC620191206073606.png' data-featherlight='image'><img class='report-img' src='file:///D:\workspace1\SynchronizedExtentReport5/screenshots/TC620191206073606.png' /></a></td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>07:36:11</td>
+																	<td class='step-details'>Password is Typed</td>
+																</tr>
+																<tr>
+																	<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+																	<td class='timestamp'>07:36:11</td>
+																	<td class='step-details'>Snapshot below:</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>07:36:12</td>
+																	<td class='step-details'><a href='D:\workspace1\SynchronizedExtentReport5/screenshots/TC620191206073611.png' data-featherlight='image'><img class='report-img' src='file:///D:\workspace1\SynchronizedExtentReport5/screenshots/TC620191206073611.png' /></a></td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>07:36:44</td>
+																	<td class='step-details'>Login is clicked</td>
+																</tr>
+																<tr>
+																	<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+																	<td class='timestamp'>07:36:44</td>
+																	<td class='step-details'>Snapshot below:</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>07:36:44</td>
+																	<td class='step-details'><a href='D:\workspace1\SynchronizedExtentReport5/screenshots/TC620191206073644.png' data-featherlight='image'><img class='report-img' src='file:///D:\workspace1\SynchronizedExtentReport5/screenshots/TC620191206073644.png' /></a></td>
+																</tr>
+																<tr>
+																	<td class='status fail' title='fail' alt='fail'><i class='mdi-navigation-cancel'></i></td>
+																	<td class='timestamp'>07:36:44</td>
+																	<td class='step-details'>Test Failedorg.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//SELECT[@name='j_company']"}
+  (Session info: chrome=78.0.3904.108)
+  (Driver info: chromedriver=78.0.3904.105 (60e2d8774a8151efa6a00b1f358371b1e0e07ee2-refs/branch-heads/3904@{#877}),platform=Windows NT 10.0.18362 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 17 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.0', revision: '35ae25b', time: '2016-03-15 17:00:58'
+System info: host: 'LAPTOP-76PGCCB3', ip: '192.168.225.33', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_231'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:61564}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=78.0.3904.105 (60e2d8774a8151efa6a00b1f358371b1e0e07ee2-refs/branch-heads/3904@{#877}), userDataDir=C:\Users\shwetabh\AppData\Local\Temp\scoped_dir7836_1523895800}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=78.0.3904.108, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 07be69e419ee97e9e092b05d63b80248
+*** Element info: {Using=xpath, value=//SELECT[@name='j_company']}
+Command duration or timeout: 201 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:32:46'
+System info: host: 'LAPTOP-76PGCCB3', ip: '192.168.225.33', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_231'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:61564}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=78.0.3904.105 (60e2d8774a8151efa6a00b1f358371b1e0e07ee2-refs/branch-heads/3904@{#877}), userDataDir=C:\Users\shwetabh\AppData\Local\Temp\scoped_dir7836_1523895800}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=78.0.3904.108, browserConnectionEnabled=false, proxy={}, nativeEvents=true, webdriver.remote.sessionid=8990f09b-486d-4020-837c-4592c04938ff, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 8990f09b-486d-4020-837c-4592c04938ff
+*** Element info: {Using=xpath, value=//SELECT[@name='j_company']}</td>
+																</tr>
+																<tr>
+																	<td class='status fail' title='fail' alt='fail'><i class='mdi-navigation-cancel'></i></td>
+																	<td class='timestamp'>07:36:45</td>
+																	<td class='step-details'><a href='D:\workspace1\SynchronizedExtentReport5/screenshots/TC620191206073644.png' data-featherlight='image'><img class='report-img' src='file:///D:\workspace1\SynchronizedExtentReport5/screenshots/TC620191206073644.png' /></a></td>
+																</tr>
+														</tbody>
+													</table>
+													<ul class='collapsible node-list' data-collapsible='accordion'>
+													</ul>
+												</div>
+											</div>
+										</li>
+										<li class='collection-item test displayed active fail ' extentid='4bd0f307-ebf7-44e3-8ec7-64e324c5f2fc'>
+											<div class='test-head'>
+												<span class='test-name'>TC4 </span>
+												<span class='test-status label right outline capitalize fail'>fail</span>
+												<span class='category-assigned hide  regressiontesting'></span>
+											</div>
+											<div class='test-body'>
+												<div class='test-info'>
+													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2019-12-06 07:34:41</span>
+													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2019-12-06 07:35:45</span>
+													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 1m 3s+862ms</span>
+												</div>
+												<div class='test-desc'> INVALID username and VALID password.</div>
+												<div class='test-attributes'>
+														<div class='categories'>
+																<span class='category text-white'>Regression Testing</span>
+														</div>
+												</div>
+												<div class='test-steps'>
+													<table class='bordered table-results'>
+														<thead>
+															<tr>
+																<th>Status</th>
+																<th>Timestamp</th>
+																<th>Details</th>
+															</tr>
+														</thead>
+														<tbody>
+																<tr>
+																	<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+																	<td class='timestamp'>07:34:41</td>
+																	<td class='step-details'>TEST CASE STARTED IS -> TC4</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>07:34:53</td>
+																	<td class='step-details'>Log from threadId: 14</td>
+																</tr>
+																<tr>
+																	<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+																	<td class='timestamp'>07:34:53</td>
+																	<td class='step-details'>Log from threadId: 14</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>07:35:06</td>
+																	<td class='step-details'>username is Typed</td>
+																</tr>
+																<tr>
+																	<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+																	<td class='timestamp'>07:35:06</td>
+																	<td class='step-details'>Snapshot below:</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>07:35:07</td>
+																	<td class='step-details'><a href='D:\workspace1\SynchronizedExtentReport5/screenshots/TC420191206073506.png' data-featherlight='image'><img class='report-img' src='file:///D:\workspace1\SynchronizedExtentReport5/screenshots/TC420191206073506.png' /></a></td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>07:35:12</td>
+																	<td class='step-details'>Password is Typed</td>
+																</tr>
+																<tr>
+																	<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+																	<td class='timestamp'>07:35:12</td>
+																	<td class='step-details'>Snapshot below:</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>07:35:12</td>
+																	<td class='step-details'><a href='D:\workspace1\SynchronizedExtentReport5/screenshots/TC420191206073512.png' data-featherlight='image'><img class='report-img' src='file:///D:\workspace1\SynchronizedExtentReport5/screenshots/TC420191206073512.png' /></a></td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>07:35:44</td>
+																	<td class='step-details'>Login is clicked</td>
+																</tr>
+																<tr>
+																	<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+																	<td class='timestamp'>07:35:44</td>
+																	<td class='step-details'>Snapshot below:</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>07:35:44</td>
+																	<td class='step-details'><a href='D:\workspace1\SynchronizedExtentReport5/screenshots/TC420191206073544.png' data-featherlight='image'><img class='report-img' src='file:///D:\workspace1\SynchronizedExtentReport5/screenshots/TC420191206073544.png' /></a></td>
+																</tr>
+																<tr>
+																	<td class='status fail' title='fail' alt='fail'><i class='mdi-navigation-cancel'></i></td>
+																	<td class='timestamp'>07:35:44</td>
+																	<td class='step-details'>Test Failedorg.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//SELECT[@name='j_company']"}
+  (Session info: chrome=78.0.3904.108)
+  (Driver info: chromedriver=78.0.3904.105 (60e2d8774a8151efa6a00b1f358371b1e0e07ee2-refs/branch-heads/3904@{#877}),platform=Windows NT 10.0.18362 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 11 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.0', revision: '35ae25b', time: '2016-03-15 17:00:58'
+System info: host: 'LAPTOP-76PGCCB3', ip: '192.168.225.33', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_231'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:61469}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=78.0.3904.105 (60e2d8774a8151efa6a00b1f358371b1e0e07ee2-refs/branch-heads/3904@{#877}), userDataDir=C:\Users\shwetabh\AppData\Local\Temp\scoped_dir14044_49391606}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=78.0.3904.108, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: ed5503da3ba5ae463d9c51fd574cf4ac
+*** Element info: {Using=xpath, value=//SELECT[@name='j_company']}
+Command duration or timeout: 237 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:32:46'
+System info: host: 'LAPTOP-76PGCCB3', ip: '192.168.225.33', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_231'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:61469}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=78.0.3904.105 (60e2d8774a8151efa6a00b1f358371b1e0e07ee2-refs/branch-heads/3904@{#877}), userDataDir=C:\Users\shwetabh\AppData\Local\Temp\scoped_dir14044_49391606}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=78.0.3904.108, browserConnectionEnabled=false, proxy={}, nativeEvents=true, webdriver.remote.sessionid=9f6b1eff-e86c-40bd-a193-3c6d1dc9304e, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 9f6b1eff-e86c-40bd-a193-3c6d1dc9304e
+*** Element info: {Using=xpath, value=//SELECT[@name='j_company']}</td>
+																</tr>
+																<tr>
+																	<td class='status fail' title='fail' alt='fail'><i class='mdi-navigation-cancel'></i></td>
+																	<td class='timestamp'>07:35:45</td>
+																	<td class='step-details'><a href='D:\workspace1\SynchronizedExtentReport5/screenshots/TC420191206073544.png' data-featherlight='image'><img class='report-img' src='file:///D:\workspace1\SynchronizedExtentReport5/screenshots/TC420191206073544.png' /></a></td>
+																</tr>
+														</tbody>
+													</table>
+													<ul class='collapsible node-list' data-collapsible='accordion'>
+													</ul>
+												</div>
+											</div>
+										</li>
+										<li class='collection-item test displayed active fail ' extentid='bb720d6e-e5c8-44aa-97d9-6951ad23ded8'>
 											<div class='test-head'>
 												<span class='test-name'>TC3 </span>
-												<span class='test-status label right outline capitalize pass'>pass</span>
-												<span class='category-assigned hide '></span>
+												<span class='test-status label right outline capitalize fail'>fail</span>
+												<span class='category-assigned hide  smoketesting'></span>
 											</div>
 											<div class='test-body'>
 												<div class='test-info'>
-													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2019-01-20 21:23:16</span>
-													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'></span>
-													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'></span>
+													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2019-12-06 07:33:28</span>
+													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2019-12-06 07:34:39</span>
+													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 1m 10s+692ms</span>
 												</div>
-												<div class='test-desc'></div>
+												<div class='test-desc'>Verify that  VALID username and VALID password.</div>
 												<div class='test-attributes'>
+														<div class='categories'>
+																<span class='category text-white'>Smoke Testing</span>
+														</div>
 												</div>
 												<div class='test-steps'>
 													<table class='bordered table-results'>
@@ -268,45 +678,91 @@
 														<tbody>
 																<tr>
 																	<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
-																	<td class='timestamp'>21:23:16</td>
+																	<td class='timestamp'>07:33:28</td>
 																	<td class='step-details'>TEST CASE STARTED IS -> TC3</td>
 																</tr>
-														</tbody>
-													</table>
-													<ul class='collapsible node-list' data-collapsible='accordion'>
-													</ul>
-												</div>
-											</div>
-										</li>
-										<li class='collection-item test displayed active pass ' extentid='34dcd8f4-0cbb-4914-9d63-8c09bd972aa3'>
-											<div class='test-head'>
-												<span class='test-name'>TC5 </span>
-												<span class='test-status label right outline capitalize pass'>pass</span>
-												<span class='category-assigned hide '></span>
-											</div>
-											<div class='test-body'>
-												<div class='test-info'>
-													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2019-01-20 21:23:16</span>
-													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'></span>
-													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'></span>
-												</div>
-												<div class='test-desc'></div>
-												<div class='test-attributes'>
-												</div>
-												<div class='test-steps'>
-													<table class='bordered table-results'>
-														<thead>
-															<tr>
-																<th>Status</th>
-																<th>Timestamp</th>
-																<th>Details</th>
-															</tr>
-														</thead>
-														<tbody>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>07:33:43</td>
+																	<td class='step-details'>Log from threadId: 14</td>
+																</tr>
 																<tr>
 																	<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
-																	<td class='timestamp'>21:23:16</td>
-																	<td class='step-details'>TEST CASE STARTED IS -> TC5</td>
+																	<td class='timestamp'>07:33:43</td>
+																	<td class='step-details'>Log from threadId: 14</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>07:33:58</td>
+																	<td class='step-details'>username is Typed</td>
+																</tr>
+																<tr>
+																	<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+																	<td class='timestamp'>07:33:58</td>
+																	<td class='step-details'>Snapshot below:</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>07:33:59</td>
+																	<td class='step-details'><a href='D:\workspace1\SynchronizedExtentReport5/screenshots/TC320191206073358.png' data-featherlight='image'><img class='report-img' src='file:///D:\workspace1\SynchronizedExtentReport5/screenshots/TC320191206073358.png' /></a></td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>07:34:04</td>
+																	<td class='step-details'>Password is Typed</td>
+																</tr>
+																<tr>
+																	<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+																	<td class='timestamp'>07:34:04</td>
+																	<td class='step-details'>Snapshot below:</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>07:34:04</td>
+																	<td class='step-details'><a href='D:\workspace1\SynchronizedExtentReport5/screenshots/TC320191206073404.png' data-featherlight='image'><img class='report-img' src='file:///D:\workspace1\SynchronizedExtentReport5/screenshots/TC320191206073404.png' /></a></td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>07:34:37</td>
+																	<td class='step-details'>Login is clicked</td>
+																</tr>
+																<tr>
+																	<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+																	<td class='timestamp'>07:34:37</td>
+																	<td class='step-details'>Snapshot below:</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>07:34:38</td>
+																	<td class='step-details'><a href='D:\workspace1\SynchronizedExtentReport5/screenshots/TC320191206073437.png' data-featherlight='image'><img class='report-img' src='file:///D:\workspace1\SynchronizedExtentReport5/screenshots/TC320191206073437.png' /></a></td>
+																</tr>
+																<tr>
+																	<td class='status fail' title='fail' alt='fail'><i class='mdi-navigation-cancel'></i></td>
+																	<td class='timestamp'>07:34:38</td>
+																	<td class='step-details'>Test Failedorg.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//SELECT[@name='j_company']"}
+  (Session info: chrome=78.0.3904.108)
+  (Driver info: chromedriver=78.0.3904.105 (60e2d8774a8151efa6a00b1f358371b1e0e07ee2-refs/branch-heads/3904@{#877}),platform=Windows NT 10.0.18362 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 16 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.0', revision: '35ae25b', time: '2016-03-15 17:00:58'
+System info: host: 'LAPTOP-76PGCCB3', ip: '192.168.225.33', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_231'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:62160}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=78.0.3904.105 (60e2d8774a8151efa6a00b1f358371b1e0e07ee2-refs/branch-heads/3904@{#877}), userDataDir=C:\Users\shwetabh\AppData\Local\Temp\scoped_dir1324_2055023301}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=78.0.3904.108, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 94a4387a8f9cb5b18f026aa872000365
+*** Element info: {Using=xpath, value=//SELECT[@name='j_company']}
+Command duration or timeout: 466 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:32:46'
+System info: host: 'LAPTOP-76PGCCB3', ip: '192.168.225.33', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_231'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:62160}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=78.0.3904.105 (60e2d8774a8151efa6a00b1f358371b1e0e07ee2-refs/branch-heads/3904@{#877}), userDataDir=C:\Users\shwetabh\AppData\Local\Temp\scoped_dir1324_2055023301}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=78.0.3904.108, browserConnectionEnabled=false, proxy={}, nativeEvents=true, webdriver.remote.sessionid=50602ede-be88-459d-8e69-3e969a35c57c, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 50602ede-be88-459d-8e69-3e969a35c57c
+*** Element info: {Using=xpath, value=//SELECT[@name='j_company']}</td>
+																</tr>
+																<tr>
+																	<td class='status fail' title='fail' alt='fail'><i class='mdi-navigation-cancel'></i></td>
+																	<td class='timestamp'>07:34:39</td>
+																	<td class='step-details'><a href='D:\workspace1\SynchronizedExtentReport5/screenshots/TC320191206073438.png' data-featherlight='image'><img class='report-img' src='file:///D:\workspace1\SynchronizedExtentReport5/screenshots/TC320191206073438.png' /></a></td>
 																</tr>
 														</tbody>
 													</table>
@@ -315,20 +771,23 @@
 												</div>
 											</div>
 										</li>
-										<li class='collection-item test displayed active pass ' extentid='5081517f-c584-484d-b56d-e8bdce9f4fbd'>
+										<li class='collection-item test displayed active fail ' extentid='fb0641dd-20c9-473a-8748-3c486bd33895'>
 											<div class='test-head'>
-												<span class='test-name'>TC1 </span>
-												<span class='test-status label right outline capitalize pass'>pass</span>
-												<span class='category-assigned hide '></span>
+												<span class='test-name'>TC5 </span>
+												<span class='test-status label right outline capitalize fail'>fail</span>
+												<span class='category-assigned hide  smoketesting'></span>
 											</div>
 											<div class='test-body'>
 												<div class='test-info'>
-													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2019-01-20 21:23:16</span>
-													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'></span>
-													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'></span>
+													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2019-12-06 07:33:28</span>
+													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2019-12-06 07:34:43</span>
+													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 1m 14s+990ms</span>
 												</div>
-												<div class='test-desc'></div>
+												<div class='test-desc'> INVALID username and VALID password.</div>
 												<div class='test-attributes'>
+														<div class='categories'>
+																<span class='category text-white'>Smoke Testing</span>
+														</div>
 												</div>
 												<div class='test-steps'>
 													<table class='bordered table-results'>
@@ -342,8 +801,214 @@
 														<tbody>
 																<tr>
 																	<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
-																	<td class='timestamp'>21:23:16</td>
+																	<td class='timestamp'>07:33:28</td>
+																	<td class='step-details'>TEST CASE STARTED IS -> TC5</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>07:33:43</td>
+																	<td class='step-details'>Log from threadId: 15</td>
+																</tr>
+																<tr>
+																	<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+																	<td class='timestamp'>07:33:43</td>
+																	<td class='step-details'>Log from threadId: 15</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>07:33:59</td>
+																	<td class='step-details'>username is Typed</td>
+																</tr>
+																<tr>
+																	<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+																	<td class='timestamp'>07:33:59</td>
+																	<td class='step-details'>Snapshot below:</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>07:34:00</td>
+																	<td class='step-details'><a href='D:\workspace1\SynchronizedExtentReport5/screenshots/TC520191206073359.png' data-featherlight='image'><img class='report-img' src='file:///D:\workspace1\SynchronizedExtentReport5/screenshots/TC520191206073359.png' /></a></td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>07:34:05</td>
+																	<td class='step-details'>Password is Typed</td>
+																</tr>
+																<tr>
+																	<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+																	<td class='timestamp'>07:34:05</td>
+																	<td class='step-details'>Snapshot below:</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>07:34:05</td>
+																	<td class='step-details'><a href='D:\workspace1\SynchronizedExtentReport5/screenshots/TC520191206073405.png' data-featherlight='image'><img class='report-img' src='file:///D:\workspace1\SynchronizedExtentReport5/screenshots/TC520191206073405.png' /></a></td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>07:34:42</td>
+																	<td class='step-details'>Login is clicked</td>
+																</tr>
+																<tr>
+																	<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+																	<td class='timestamp'>07:34:42</td>
+																	<td class='step-details'>Snapshot below:</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>07:34:42</td>
+																	<td class='step-details'><a href='D:\workspace1\SynchronizedExtentReport5/screenshots/TC520191206073442.png' data-featherlight='image'><img class='report-img' src='file:///D:\workspace1\SynchronizedExtentReport5/screenshots/TC520191206073442.png' /></a></td>
+																</tr>
+																<tr>
+																	<td class='status fail' title='fail' alt='fail'><i class='mdi-navigation-cancel'></i></td>
+																	<td class='timestamp'>07:34:43</td>
+																	<td class='step-details'>Test Failedorg.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//SELECT[@name='j_company']"}
+  (Session info: chrome=78.0.3904.108)
+  (Driver info: chromedriver=78.0.3904.105 (60e2d8774a8151efa6a00b1f358371b1e0e07ee2-refs/branch-heads/3904@{#877}),platform=Windows NT 10.0.18362 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.0', revision: '35ae25b', time: '2016-03-15 17:00:58'
+System info: host: 'LAPTOP-76PGCCB3', ip: '192.168.225.33', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_231'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:62160}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=78.0.3904.105 (60e2d8774a8151efa6a00b1f358371b1e0e07ee2-refs/branch-heads/3904@{#877}), userDataDir=C:\Users\shwetabh\AppData\Local\Temp\scoped_dir1324_2055023301}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=78.0.3904.108, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 94a4387a8f9cb5b18f026aa872000365
+*** Element info: {Using=xpath, value=//SELECT[@name='j_company']}
+Command duration or timeout: 244 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:32:46'
+System info: host: 'LAPTOP-76PGCCB3', ip: '192.168.225.33', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_231'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:62160}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=78.0.3904.105 (60e2d8774a8151efa6a00b1f358371b1e0e07ee2-refs/branch-heads/3904@{#877}), userDataDir=C:\Users\shwetabh\AppData\Local\Temp\scoped_dir1324_2055023301}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=78.0.3904.108, browserConnectionEnabled=false, proxy={}, nativeEvents=true, webdriver.remote.sessionid=50602ede-be88-459d-8e69-3e969a35c57c, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 50602ede-be88-459d-8e69-3e969a35c57c
+*** Element info: {Using=xpath, value=//SELECT[@name='j_company']}</td>
+																</tr>
+																<tr>
+																	<td class='status fail' title='fail' alt='fail'><i class='mdi-navigation-cancel'></i></td>
+																	<td class='timestamp'>07:34:43</td>
+																	<td class='step-details'><a href='D:\workspace1\SynchronizedExtentReport5/screenshots/TC520191206073443.png' data-featherlight='image'><img class='report-img' src='file:///D:\workspace1\SynchronizedExtentReport5/screenshots/TC520191206073443.png' /></a></td>
+																</tr>
+														</tbody>
+													</table>
+													<ul class='collapsible node-list' data-collapsible='accordion'>
+													</ul>
+												</div>
+											</div>
+										</li>
+										<li class='collection-item test displayed active fail ' extentid='ca9d3951-90a3-428e-ad08-0d9fe60b3c5a'>
+											<div class='test-head'>
+												<span class='test-name'>TC1 </span>
+												<span class='test-status label right outline capitalize fail'>fail</span>
+												<span class='category-assigned hide  smoketesting'></span>
+											</div>
+											<div class='test-body'>
+												<div class='test-info'>
+													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2019-12-06 07:33:28</span>
+													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2019-12-06 07:35:41</span>
+													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 2m 13s+50ms</span>
+												</div>
+												<div class='test-desc'>Verify that  VALID username and VALID password.</div>
+												<div class='test-attributes'>
+														<div class='categories'>
+																<span class='category text-white'>Smoke Testing</span>
+														</div>
+												</div>
+												<div class='test-steps'>
+													<table class='bordered table-results'>
+														<thead>
+															<tr>
+																<th>Status</th>
+																<th>Timestamp</th>
+																<th>Details</th>
+															</tr>
+														</thead>
+														<tbody>
+																<tr>
+																	<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+																	<td class='timestamp'>07:33:28</td>
 																	<td class='step-details'>TEST CASE STARTED IS -> TC1</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>07:34:50</td>
+																	<td class='step-details'>Log from threadId: 13</td>
+																</tr>
+																<tr>
+																	<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+																	<td class='timestamp'>07:34:50</td>
+																	<td class='step-details'>Log from threadId: 13</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>07:35:02</td>
+																	<td class='step-details'>username is Typed</td>
+																</tr>
+																<tr>
+																	<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+																	<td class='timestamp'>07:35:02</td>
+																	<td class='step-details'>Snapshot below:</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>07:35:03</td>
+																	<td class='step-details'><a href='D:\workspace1\SynchronizedExtentReport5/screenshots/TC120191206073502.png' data-featherlight='image'><img class='report-img' src='file:///D:\workspace1\SynchronizedExtentReport5/screenshots/TC120191206073502.png' /></a></td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>07:35:08</td>
+																	<td class='step-details'>Password is Typed</td>
+																</tr>
+																<tr>
+																	<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+																	<td class='timestamp'>07:35:08</td>
+																	<td class='step-details'>Snapshot below:</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>07:35:08</td>
+																	<td class='step-details'><a href='D:\workspace1\SynchronizedExtentReport5/screenshots/TC120191206073508.png' data-featherlight='image'><img class='report-img' src='file:///D:\workspace1\SynchronizedExtentReport5/screenshots/TC120191206073508.png' /></a></td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>07:35:40</td>
+																	<td class='step-details'>Login is clicked</td>
+																</tr>
+																<tr>
+																	<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+																	<td class='timestamp'>07:35:40</td>
+																	<td class='step-details'>Snapshot below:</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>07:35:40</td>
+																	<td class='step-details'><a href='D:\workspace1\SynchronizedExtentReport5/screenshots/TC120191206073540.png' data-featherlight='image'><img class='report-img' src='file:///D:\workspace1\SynchronizedExtentReport5/screenshots/TC120191206073540.png' /></a></td>
+																</tr>
+																<tr>
+																	<td class='status fail' title='fail' alt='fail'><i class='mdi-navigation-cancel'></i></td>
+																	<td class='timestamp'>07:35:41</td>
+																	<td class='step-details'>Test Failedorg.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//SELECT[@name='j_company']"}
+  (Session info: chrome=78.0.3904.108)
+  (Driver info: chromedriver=78.0.3904.105 (60e2d8774a8151efa6a00b1f358371b1e0e07ee2-refs/branch-heads/3904@{#877}),platform=Windows NT 10.0.18362 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 16 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.0', revision: '35ae25b', time: '2016-03-15 17:00:58'
+System info: host: 'LAPTOP-76PGCCB3', ip: '192.168.225.33', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_231'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:61469}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=78.0.3904.105 (60e2d8774a8151efa6a00b1f358371b1e0e07ee2-refs/branch-heads/3904@{#877}), userDataDir=C:\Users\shwetabh\AppData\Local\Temp\scoped_dir14044_49391606}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=78.0.3904.108, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: ed5503da3ba5ae463d9c51fd574cf4ac
+*** Element info: {Using=xpath, value=//SELECT[@name='j_company']}
+Command duration or timeout: 422 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:32:46'
+System info: host: 'LAPTOP-76PGCCB3', ip: '192.168.225.33', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_231'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:61469}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=78.0.3904.105 (60e2d8774a8151efa6a00b1f358371b1e0e07ee2-refs/branch-heads/3904@{#877}), userDataDir=C:\Users\shwetabh\AppData\Local\Temp\scoped_dir14044_49391606}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=78.0.3904.108, browserConnectionEnabled=false, proxy={}, nativeEvents=true, webdriver.remote.sessionid=9f6b1eff-e86c-40bd-a193-3c6d1dc9304e, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 9f6b1eff-e86c-40bd-a193-3c6d1dc9304e
+*** Element info: {Using=xpath, value=//SELECT[@name='j_company']}</td>
+																</tr>
+																<tr>
+																	<td class='status fail' title='fail' alt='fail'><i class='mdi-navigation-cancel'></i></td>
+																	<td class='timestamp'>07:35:41</td>
+																	<td class='step-details'><a href='D:\workspace1\SynchronizedExtentReport5/screenshots/TC120191206073541.png' data-featherlight='image'><img class='report-img' src='file:///D:\workspace1\SynchronizedExtentReport5/screenshots/TC120191206073541.png' /></a></td>
 																</tr>
 														</tbody>
 													</table>
@@ -380,6 +1045,130 @@
 			<!-- /tests -->
 			
 			<!-- categories -->
+				<div id='categories-view' class='row _addedTable hide'>
+					<div class='col _addedCell1'>
+						<div class='contents'>
+							<div class='card-panel heading'>
+								<h5>Categories</h5>
+							</div>
+							<div class='card-panel filters'>
+								<div class='search' alt='Search tests' title='Search tests'>
+									<div class='input-field left'>
+										<input id='searchTests' type='text' class='validate' placeholder='Search...'>
+									</div>
+									<a href="#" class='btn-floating btn-small waves-effect waves-light blue lighten-1'>
+										<i class='mdi-action-search'></i>
+									</a>
+								</div>
+							</div>
+							<div class='card-panel no-padding-h no-padding-v'>
+								<div class='wrapper'>
+									<ul id='cat-collection' class='cat-collection'>
+											<li class='category-item displayed'>
+												<div class='cat-head'>
+													<span class='category-name'>Regression Testing</span>
+												</div>
+												<div class='category-status-counts'>
+														<span class='fail label dot'>Fail: 3</span>
+												</div>
+												<div class='cat-body'>
+													<div class='category-status-counts'>
+														<div class='button-group'>
+															<a href='#!' class='pass label filter'>Pass <span class='icon'>0</span></a>
+															<a href='#!' class='fail label filter'>Fail <span class='icon'>3</span></a>
+															<a href='#!' class='other label filter'>Others <span class='icon'>0</span></a>
+														</div>
+													</div>
+													<div class='cat-tests'>
+														<table class='bordered'>
+															<thead>
+																<tr>
+																	<th>RunDate</th>
+																	<th>Test Name</th>
+																	<th>Status</th>
+																</tr>
+															</thead>
+															<tbody>
+																	<tr class='fail'>
+																		<td>2019-12-06 07:34:41</td>
+																		<td><span class='category-link linked' extentid='4bd0f307-ebf7-44e3-8ec7-64e324c5f2fc'>TC4</span></td>
+																		<td><div class='status label capitalize fail'>fail</div></td>
+																	</tr>
+																	<tr class='fail'>
+																		<td>2019-12-06 07:34:44</td>
+																		<td><span class='category-link linked' extentid='fed55629-193c-4c83-9c65-ba02d01889b7'>TC6</span></td>
+																		<td><div class='status label capitalize fail'>fail</div></td>
+																	</tr>
+																	<tr class='fail'>
+																		<td>2019-12-06 07:35:42</td>
+																		<td><span class='category-link linked' extentid='c7200984-7b1a-4f00-864a-906206012dcc'>TC2</span></td>
+																		<td><div class='status label capitalize fail'>fail</div></td>
+																	</tr>
+															<tbody>
+														</table>
+													</div>
+												</div> 
+											</li>
+											<li class='category-item displayed'>
+												<div class='cat-head'>
+													<span class='category-name'>Smoke Testing</span>
+												</div>
+												<div class='category-status-counts'>
+														<span class='fail label dot'>Fail: 3</span>
+												</div>
+												<div class='cat-body'>
+													<div class='category-status-counts'>
+														<div class='button-group'>
+															<a href='#!' class='pass label filter'>Pass <span class='icon'>0</span></a>
+															<a href='#!' class='fail label filter'>Fail <span class='icon'>3</span></a>
+															<a href='#!' class='other label filter'>Others <span class='icon'>0</span></a>
+														</div>
+													</div>
+													<div class='cat-tests'>
+														<table class='bordered'>
+															<thead>
+																<tr>
+																	<th>RunDate</th>
+																	<th>Test Name</th>
+																	<th>Status</th>
+																</tr>
+															</thead>
+															<tbody>
+																	<tr class='fail'>
+																		<td>2019-12-06 07:33:28</td>
+																		<td><span class='category-link linked' extentid='bb720d6e-e5c8-44aa-97d9-6951ad23ded8'>TC3</span></td>
+																		<td><div class='status label capitalize fail'>fail</div></td>
+																	</tr>
+																	<tr class='fail'>
+																		<td>2019-12-06 07:33:28</td>
+																		<td><span class='category-link linked' extentid='fb0641dd-20c9-473a-8748-3c486bd33895'>TC5</span></td>
+																		<td><div class='status label capitalize fail'>fail</div></td>
+																	</tr>
+																	<tr class='fail'>
+																		<td>2019-12-06 07:33:28</td>
+																		<td><span class='category-link linked' extentid='ca9d3951-90a3-428e-ad08-0d9fe60b3c5a'>TC1</span></td>
+																		<td><div class='status label capitalize fail'>fail</div></td>
+																	</tr>
+															<tbody>
+														</table>
+													</div>
+												</div> 
+											</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id='cat-details-wrapper' class='col _addedCell2'>
+						<div class='contents'>
+							<div class='card-panel details-view'>
+								<h5 class='cat-name'></h5>
+								<div class='cat-container'>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 			<!-- /categories -->
 			
 			<!-- exceptions -->

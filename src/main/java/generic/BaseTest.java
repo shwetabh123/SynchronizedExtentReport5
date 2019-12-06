@@ -204,8 +204,10 @@ Logger APP_LOGS = Logger.getLogger("BaseTest");
 	
 
 			
-			return new RemoteWebDriver(new URL("http://192.168.2.8:4444/wd/hub"), getBrowserCapabilities(browser));
-		//	return new RemoteWebDriver(new URL("http://10.111.108.157:4444/wd/hub"), getBrowserCapabilities(browser));
+			return new RemoteWebDriver(new URL("http://192.168.225.33:4444/wd/hub"), getBrowserCapabilities(browser));
+		
+			
+			//	return new RemoteWebDriver(new URL("http://10.111.108.157:4444/wd/hub"), getBrowserCapabilities(browser));
 			
 			
 		}

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <suite name="Extent Parallel Test" parallel="classes" thread-count="4">
   <listeners>
-        <listener class-name="generic.ExtentReporttListener"/>
+        <listener class-name="main.java.generic.ExtentReporttListener"/>
     </listeners>
 
    
@@ -9,10 +9,10 @@
     <test name="ExtentWithParallelClasses">
          <parameter name="browser" value="chrome"/>
         <classes>
-            <class name="com.pulse.Test.ValidLogin" />
-            <class name="com.pulse.Test.ValidLogin2" />
+            <class name="test.java.com.pulse.Test.ValidLogin" />
+            <class name="test.java.com.pulse.Test.ValidLogin2" />
             
-             <class name="com.pulse.Test.ValidLogin3" />
+             <class name="test.java.com.pulse.Test.ValidLogin3" />
 
         </classes>
     </test>

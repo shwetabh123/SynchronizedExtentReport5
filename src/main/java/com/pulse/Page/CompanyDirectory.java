@@ -8,7 +8,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 
-import generic.BasePage;
+import main.java.generic.BasePage;
 
 public class CompanyDirectory extends BasePage{
 	
