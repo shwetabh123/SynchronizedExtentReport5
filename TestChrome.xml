@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Extent Parallel Test" parallel="classes" thread-count="4">
+  <listeners>
+        <listener class-name="main.java.generic.ExtentReporttListener"/>
+    </listeners>
+
+   
+ 
+    <test name="TestChrome">
+         <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="test.java.com.pulse.Test.ValidLogin" />
+       
+        </classes>
+    </test>
+</suite>
