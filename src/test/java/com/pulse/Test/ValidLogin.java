@@ -136,30 +136,35 @@ import main.java.generic.ExtentTestManager;
 	
 		
 					
-					l.dropdowntheaccount(accnt);
-					Thread.sleep(5000);
-				
-
-				    ExtentTestManager.getTest(method.getName()).log(LogStatus.PASS, "dropdown is clicked ");
-					
-					
-			        ExtentTestManager.getTest(method.getName()).log(LogStatus.INFO, "Snapshot below: ");
-			        
-			   	 imagePath=	getScreenshot(driver,method.getName());
-		            ExtentTestManager.getTest(method.getName()).log(LogStatus.PASS,ExtentTestManager.getTest(method.getName()).addScreenCapture(imagePath));   
-	
-		
-			
-					l.clickselect();
-					Thread.sleep(5000);
-				    ExtentTestManager.getTest(method.getName()).log(LogStatus.PASS, "select is clicked ");
-					
-					
-			        ExtentTestManager.getTest(method.getName()).log(LogStatus.INFO, "Snapshot below: ");
-
-			   	 imagePath=	getScreenshot(driver,method.getName());
-		            ExtentTestManager.getTest(method.getName()).log(LogStatus.PASS,ExtentTestManager.getTest(method.getName()).addScreenCapture(imagePath));   
-	
+		/*
+		 * l.dropdowntheaccount(accnt); Thread.sleep(5000);
+		 * 
+		 * 
+		 * ExtentTestManager.getTest(method.getName()).log(LogStatus.PASS,
+		 * "dropdown is clicked ");
+		 * 
+		 * 
+		 * ExtentTestManager.getTest(method.getName()).log(LogStatus.INFO,
+		 * "Snapshot below: ");
+		 * 
+		 * imagePath= getScreenshot(driver,method.getName());
+		 * ExtentTestManager.getTest(method.getName()).log(LogStatus.PASS,
+		 * ExtentTestManager.getTest(method.getName()).addScreenCapture(imagePath));
+		 * 
+		 * 
+		 * 
+		 * l.clickselect(); Thread.sleep(5000);
+		 * ExtentTestManager.getTest(method.getName()).log(LogStatus.PASS,
+		 * "select is clicked ");
+		 * 
+		 * 
+		 * ExtentTestManager.getTest(method.getName()).log(LogStatus.INFO,
+		 * "Snapshot below: ");
+		 * 
+		 * imagePath= getScreenshot(driver,method.getName());
+		 * ExtentTestManager.getTest(method.getName()).log(LogStatus.PASS,
+		 * ExtentTestManager.getTest(method.getName()).addScreenCapture(imagePath));
+		 */
 		
   
 	   }
@@ -245,33 +250,37 @@ import main.java.generic.ExtentTestManager;
 	
 		
 			
-					
-					l.dropdowntheaccount(accnt);
-					Thread.sleep(5000);
-				
-
-				    ExtentTestManager.getTest(method.getName()).log(LogStatus.PASS, "dropdown is clicked ");
-					
-					
-			        ExtentTestManager.getTest(method.getName()).log(LogStatus.INFO, "Snapshot below: ");
-			        
-			   	 imagePath=	getScreenshot(driver,method.getName());
-		            ExtentTestManager.getTest(method.getName()).log(LogStatus.PASS,ExtentTestManager.getTest(method.getName()).addScreenCapture(imagePath));   
-	
-		
-			
-			
-					l.clickselect();
-					Thread.sleep(5000);
-				    ExtentTestManager.getTest(method.getName()).log(LogStatus.PASS, "select is clicked ");
-					
-					
-			        ExtentTestManager.getTest(method.getName()).log(LogStatus.INFO, "Snapshot below: ");
-
-			   	 imagePath=	getScreenshot(driver,method.getName());
-		            ExtentTestManager.getTest(method.getName()).log(LogStatus.PASS,ExtentTestManager.getTest(method.getName()).addScreenCapture(imagePath));   
-	
-		
+		/*
+		 * l.dropdowntheaccount(accnt); Thread.sleep(5000);
+		 * 
+		 * 
+		 * ExtentTestManager.getTest(method.getName()).log(LogStatus.PASS,
+		 * "dropdown is clicked ");
+		 * 
+		 * 
+		 * ExtentTestManager.getTest(method.getName()).log(LogStatus.INFO,
+		 * "Snapshot below: ");
+		 * 
+		 * imagePath= getScreenshot(driver,method.getName());
+		 * ExtentTestManager.getTest(method.getName()).log(LogStatus.PASS,
+		 * ExtentTestManager.getTest(method.getName()).addScreenCapture(imagePath));
+		 * 
+		 * 
+		 * 
+		 * 
+		 * l.clickselect(); Thread.sleep(5000);
+		 * ExtentTestManager.getTest(method.getName()).log(LogStatus.PASS,
+		 * "select is clicked ");
+		 * 
+		 * 
+		 * ExtentTestManager.getTest(method.getName()).log(LogStatus.INFO,
+		 * "Snapshot below: ");
+		 * 
+		 * imagePath= getScreenshot(driver,method.getName());
+		 * ExtentTestManager.getTest(method.getName()).log(LogStatus.PASS,
+		 * ExtentTestManager.getTest(method.getName()).addScreenCapture(imagePath));
+		 * 
+		 */
 			
 		   	   
 	   }
